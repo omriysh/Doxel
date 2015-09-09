@@ -74,10 +74,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="FpsCounter.cpp" />
+    <ClCompile Include="Test.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="FpsCounter.h" />
     <ClInclude Include="SimpleErrors.h" />
     <ClInclude Include="Window.h" />
   </ItemGroup>

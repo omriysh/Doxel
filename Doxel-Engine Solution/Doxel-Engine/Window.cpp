@@ -26,6 +26,7 @@ bool Window::init(int width, int height, char* title /* = default*/)
 	{
 		glfwMakeContextCurrent(m_window); ///< set the current window to have context
 		Debug_Log("Window " << m_title << " has been initialized.");
+		m_fpsCounter.start();
 		return true;
 	}
 	else
@@ -48,6 +49,7 @@ void Window::destroy()
 
 void Window::update()
 {
+	m_currentTimePerFrame = m_fpsCounter.end();
 	glfwSwapBuffers(m_window); ///< swap the buffers for the next frame
 	glfwPollEvents(); ///< poll current events for the input manager
 }
