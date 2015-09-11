@@ -75,7 +75,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="FpsCounter.cpp" />
-    <ClCompile Include="gitTest.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="Window.cpp" />
   </ItemGroup>
